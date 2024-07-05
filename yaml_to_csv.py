@@ -15,7 +15,6 @@ def extract_keys_from_yaml(file_path, extracted_data):
         extracted_data['Message'].append(entry['message'])
         extracted_data['Action'].append('')
 
-# Example usage
 yaml_files = glob.glob('*.yaml')
 yaml_files.sort()
 extracted_data = defaultdict(list)
